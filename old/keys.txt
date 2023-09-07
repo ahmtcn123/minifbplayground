@@ -1,0 +1,188 @@
+match window.get_keys_pressed(KeyRepeat::Yes) {
+            Some(e) => {
+                for i in e {
+                    match i {
+                        Key::Key0 => todo!(),
+                        Key::Key1 => todo!(),
+                        Key::Key2 => todo!(),
+                        Key::Key3 => todo!(),
+                        Key::Key4 => todo!(),
+                        Key::Key5 => todo!(),
+                        Key::Key6 => todo!(),
+                        Key::Key7 => todo!(),
+                        Key::Key8 => todo!(),
+                        Key::Key9 => todo!(),
+                        Key::A => cursor.print(if cursor.case {
+                            "A".to_string()
+                        } else {
+                            "a".to_string()
+                        }),
+                        Key::B => cursor.print(if cursor.case {
+                            "B".to_string()
+                        } else {
+                            "b".to_string()
+                        }),
+                        Key::C => cursor.print(if cursor.case {
+                            "C".to_string()
+                        } else {
+                            "c".to_string()
+                        }),
+                        Key::D => cursor.print(if cursor.case {
+                            "D".to_string()
+                        } else {
+                            "d".to_string()
+                        }),
+                        Key::E => cursor.print(if cursor.case {
+                            "E".to_string()
+                        } else {
+                            "e".to_string()
+                        }),
+                        Key::F => cursor.print(if cursor.case {
+                            "F".to_string()
+                        } else {
+                            "f".to_string()
+                        }),
+                        Key::G => cursor.print(if cursor.case {
+                            "G".to_string()
+                        } else {
+                            "g".to_string()
+                        }),
+                        Key::H => cursor.print(if cursor.case {
+                            "H".to_string()
+                        } else {
+                            "h".to_string()
+                        }),
+                        Key::I => cursor.print(if cursor.case {
+                            "I".to_string()
+                        } else {
+                            "ı".to_string()
+                        }),
+                        Key::J => cursor.print(if cursor.case {
+                            "J".to_string()
+                        } else {
+                            "j".to_string()
+                        }),
+                        Key::K => cursor.print(if cursor.case {
+                            "K".to_string()
+                        } else {
+                            "k".to_string()
+                        }),
+                        Key::L => cursor.print(if cursor.case {
+                            "L".to_string()
+                        } else {
+                            "l".to_string()
+                        }),
+                        Key::M => cursor.print(if cursor.case {
+                            "M".to_string()
+                        } else {
+                            "m".to_string()
+                        }),
+                        Key::N => cursor.print(if cursor.case {
+                            "N".to_string()
+                        } else {
+                            "n".to_string()
+                        }),
+                        Key::O => cursor.print(if cursor.case {
+                            "O".to_string()
+                        } else {
+                            "o".to_string()
+                        }),
+                        Key::P => cursor.print(if cursor.case {
+                            "P".to_string()
+                        } else {
+                            "p".to_string()
+                        }),
+                        Key::Q => cursor.print(if cursor.case {
+                            "Q".to_string()
+                        } else {
+                            "q".to_string()
+                        }),
+                        Key::R => cursor.print(if cursor.case {
+                            "R".to_string()
+                        } else {
+                            "r".to_string()
+                        }),
+                        Key::S => cursor.print(if cursor.case {
+                            "S".to_string()
+                        } else {
+                            "s".to_string()
+                        }),
+                        Key::T => cursor.print(if cursor.case {
+                            "T".to_string()
+                        } else {
+                            "t".to_string()
+                        }),
+                        Key::U => cursor.print(if cursor.case {
+                            "U".to_string()
+                        } else {
+                            "u".to_string()
+                        }),
+                        Key::V => cursor.print(if cursor.case {
+                            "V".to_string()
+                        } else {
+                            "v".to_string()
+                        }),
+                        Key::W => cursor.print(if cursor.case {
+                            "W".to_string()
+                        } else {
+                            "w".to_string()
+                        }),
+                        Key::X => cursor.print(if cursor.case {
+                            "X".to_string()
+                        } else {
+                            "x".to_string()
+                        }),
+                        Key::Y => cursor.print(if cursor.case {
+                            "Y".to_string()
+                        } else {
+                            "y".to_string()
+                        }),
+                        Key::Z => cursor.print(if cursor.case {
+                            "Z".to_string()
+                        } else {
+                            "z".to_string()
+                        }),
+                        Key::CapsLock => cursor.case = !cursor.case,
+                        Key::Apostrophe => cursor.print(if cursor.case {
+                            "İ".to_string()
+                        } else {
+                            "i".to_string()
+                        }),
+                        Key::RightBracket => cursor.print(if cursor.case {
+                            "Ü".to_string()
+                        } else {
+                            "ü".to_string()
+                        }),
+                        Key::LeftBracket => cursor.print(if cursor.case {
+                            "Ğ".to_string()
+                        } else {
+                            "ğ".to_string()
+                        }),
+                        Key::Comma => cursor.print(if cursor.case {
+                            "Ö".to_string()
+                        } else {
+                            "ö".to_string()
+                        }),
+                        Key::Period => cursor.print(if cursor.case {
+                            "Ç".to_string()
+                        } else {
+                            "ç".to_string()
+                        }),
+                        Key::Semicolon => cursor.print(if cursor.case {
+                            "Ş".to_string()
+                        } else {
+                            "ş".to_string()
+                        }),
+                        Key::Backspace => todo!(),
+                        Key::Delete => todo!(),
+                        Key::Enter => {
+                            cursor.new_line();
+                        }
+                        Key::Space => cursor.print(" ".to_string()),
+                        Key::Tab => cursor.print("  ".to_string()),
+                        e => println!("?? {:#?}", e),
+                    }
+                }
+            }
+            None => todo!(),
+        }

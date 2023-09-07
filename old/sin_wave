@@ -1,0 +1,15 @@
+
+        //let mut angle = 0;
+        //let amplitude = 100.0;
+        //let frequency = 190.0;
+        //let mut x = 0;
+        //while x < WIDTH {
+        //    let mut y = (amplitude * (angle as f32 * (PI / frequency as f32)).sin()) as usize;
+        //    let e = HEIGHT / 2 - y;
+        //    buffer.put_pixel(x, e, Color::from_rgb(randomNm(), randomNm(), 255));
+        //    let mut z = (50.0 * ((angle as f32 * 3.141) / 180.0).sin()) as usize;
+        //    let c = HEIGHT / 2 - z;
+        //    buffer.put_pixel(x, c, Color::from_rgb(255, randomNm(), randomNm()));
+        //    angle += 5;
+        //    x = x + 1;
+        //}
